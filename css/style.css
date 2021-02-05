@@ -1,0 +1,46 @@
+html {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+    max-width: fit-content;
+    position: relative;
+    margin: auto;
+    grid-gap: 10px;
+    grid-template-areas: "header header"
+                         "nav nav"
+                         "left right"
+                         "footer footer";
+    grid-template-columns: 200px 400px;
+    grid-template-rows: 150px 200px 600px 200px;
+}
+h1, 
+h2,
+h3 {
+    font-family: monospace;
+    text-align: center;
+} 
+header {
+    background-color: lightsteelblue;
+    grid-area: header;
+}
+nav {
+    background-color: thistle;
+    grid-area: nav;
+}
+.left {
+    background-color: lavender;
+    grid-area: left;
+}
+.right {
+    background-color: lavenderblush;
+    grid-area: right;
+}
+footer {
+    background-color: palevioletred;
+    grid-area: footer;
+}
